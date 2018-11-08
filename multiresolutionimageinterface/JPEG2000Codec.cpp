@@ -1,8 +1,9 @@
+#include "core/PathologyEnums.h"
 #include "JPEG2000Codec.h"
 #include "opj_config.h"
 #include "openjpeg.h"
-#include "core/PathologyEnums.h"
 #include <string>
+#include "cstring"
 #include <vector>
 #include <sstream>
 

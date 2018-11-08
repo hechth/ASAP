@@ -14,32 +14,32 @@ namespace pathology {
 
   extern CORE_EXPORT const std::map<std::string, LUT> ColorLookupTables;
 
-  enum ColorType {
-    InvalidColorType,
-    Monochrome,
-    RGB,
-    ARGB,
-    Indexed
+  enum ColorType : int {
+    InvalidColorType = 0,
+    Monochrome = 1,
+    RGB = 2,
+    ARGB = 3,
+    Indexed = 4
   };
 
-  enum DataType {
-    InvalidDataType,
-    UChar,
-    UInt16,
-    UInt32,
-    Float
+  enum DataType : int {
+    InvalidDataType = 0,
+    UChar = 1,
+    UInt16 = 2,
+    UInt32 = 3,
+    Float = 4
   };
 
-  enum Compression {
-    RAW,
-    JPEG,
-    LZW,
-    JPEG2000
+  enum Compression : int {
+    RAW = 0,
+    JPEG = 1,
+    LZW = 2,
+    JPEG2000 = 3
   };
 
-  enum Interpolation {
-    NearestNeighbor,
-    Linear
+  enum Interpolation : int {
+    NearestNeighbor = 0,
+    Linear = 1
   };
 
 }

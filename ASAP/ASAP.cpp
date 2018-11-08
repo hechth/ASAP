@@ -39,10 +39,11 @@
 #include "multiresolutionimageinterface/MultiResolutionImageFactory.h"
 #include "multiresolutionimageinterface/OpenSlideImage.h"
 
+//Manually removed.
 #ifdef WIN32
 const char* ASAP::sharedLibraryExtensions = ".dll";
 #else
-const char* PathologyWorkstation::sharedLibraryExtensions = ".so";
+const char* ASAP::sharedLibraryExtensions = ".so";
 #endif
 
 using namespace std;
